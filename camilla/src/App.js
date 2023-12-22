@@ -1,25 +1,26 @@
-import logo from './logo.svg';
+import logo from './artspot.png' ;
 import './App.css';
+import FunctionalGreeting from "./components/FunctionalGreeting";
+import FunctionalGreeting2 from "./components/FunctionalGreeting";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+        <img src={logo} className="App-logo"  alt="logo" /> 
+       </header>;
+       <div class="bodycontent">
+       <FunctionalGreeting>
+        My name is Camilla 
+        </FunctionalGreeting>
+        </div>
 
-export default App;
+        <FunctionalGreeting2>
+        </FunctionalGreeting2>
+
+
+        </div>
+    );
+  }
+
+  export default App;
