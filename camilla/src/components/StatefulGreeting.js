@@ -1,28 +1,38 @@
 import React from "react";
 
-export default class StatefulGreeting extends React.Component {
+class StatefulGreeting extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      count: 0
+      introduction: "Hello",
+      buttonText: "Exit",
     };
   }
 
-  setCount = () => {
-    this.setState(prevState => {
-      return { count: prevState.count + 1 }
-    })
+  handleClick() {
+    if (this.state.introduction === "Hello") {
+      this.setState({
+        introduction: "Goodbye!",
+        buttonText: "Enter",
+      });
+    } else {
+      this.setState({
+        introduction: "Hello",
+        buttonText: "Exit",
+      });
+    }
   }
 
   render() {
     return (
-      <div className="greeting">
+      <div>
         <h1>
-          Hello, {this.props.name}, I'm a stateful component!
+          {this.state.introduction} {this.props.greeting}
         </h1>
-        <h2>You've clicked {this.state.count} times</h2>
-        <button onClick={this.setCount}>Increment Count</button>
+        <button onClick={() => this.handleClick()}>{this.state.buttonText}</button>
       </div>
     );
   }
 }
+
+export default StatefulGreeting;

@@ -1,17 +1,14 @@
+import logo from './artspot.png';
 import './App.css';
-import FunctionalGreeting from "./components/FunctionalGreeting";
-import FunctionalGreetingProps from "./components/FunctionalGreetingProps";
-
+import StatefulGreeting from './components/StatefulGreeting';
 
 function App() {
   return (
     <div className="App">
-     
+            <img src={logo} alt="Artspot Logo" />
+      <StatefulGreeting greeting="Welcome to Artspot" name="Hugo" />
+    </div>
+  );
+}
 
-      <FunctionalGreeting />
-      <FunctionalGreetingProps />
-
-     </div> );
-          }
-          
-  export default App;
+export default App;
