@@ -1,10 +1,10 @@
 import React from 'react';
-import NavBarForm from "./components/NavBarForm";
+import RenderingLists from './components/RenderingLists'
 
 function App() {
   return (
     <div>
-      <NavBarForm />
+      <RenderingLists />
     </div>
   );
 }
