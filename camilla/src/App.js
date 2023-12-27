@@ -1,12 +1,10 @@
-import logo from './artspot.png';
-import './App.css';
-import StatefulGreeting from './components/StatefulGreeting';
+import React from 'react';
+import NavBarForm from "./components/NavBarForm";
 
 function App() {
   return (
-    <div className="App">
-            <img src={logo} alt="Artspot Logo" />
-      <StatefulGreeting greeting="Welcome to Artspot" name="Hugo" />
+    <div>
+      <NavBarForm />
     </div>
   );
 }
