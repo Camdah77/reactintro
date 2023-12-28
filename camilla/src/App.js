@@ -1,10 +1,10 @@
 import React from 'react';
-import RenderingLists from './components/RenderingLists'
+import ControlledForm from './components/ControlledForm';
 
 function App() {
   return (
     <div>
-      <RenderingLists />
+      <ControlledForm />
     </div>
   );
 }
