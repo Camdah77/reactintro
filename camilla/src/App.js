@@ -1,12 +1,10 @@
-import React from 'react';
-import ControlledForm from './components/ControlledForm';
+import "./App.css";
+import ContentHooks from "./components/ContentHooks";
 
 function App() {
-  return (
-    <div>
-      <ControlledForm />
-    </div>
-  );
+  return <div className="App">
+      <ContentHooks />
+  </div>;
 }
 
 export default App;

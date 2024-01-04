@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import css from "./css/Content.module.css";
+import css from "..//css/Content.module.css"
 import { savedPosts } from "../../../challenges/src/posts.json";
 import PostItem from "./PostItem";
 import Loader from "./Loader";
