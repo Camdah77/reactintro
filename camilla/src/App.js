@@ -1,9 +1,10 @@
 import "./App.css";
-import ContentHooks from "./components/ContentHooks";
+import ContentAPI from "./components/ContentAPI";
+
 
 function App() {
   return <div className="App">
-      <ContentHooks />
+      <ContentAPI />
   </div>;
 }
 
